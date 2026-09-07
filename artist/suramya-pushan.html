@@ -105,7 +105,7 @@
             ],
             "relatedTo": {
                 "@type": "Person",
-                "name": "Surangama",
+                "name": "Vidushi Surangama",
                 "description": "Mère"
             },
             "colleague": {
@@ -136,6 +136,13 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+        .bi-instagram { color: #E4405F; }
+        .bi-facebook { color: #1877F2; }
+        .bi-linkedin { color: #0A66C2; }
+        .bi-twitter-x { color: #000000; }
+        .bi-youtube { color: #FF0000; }
+        .bi-globe { color: #6c757d; }
+        .bi-link-45deg { color: #43E55E; }
     </style>
 </head>
 <body>
@@ -248,6 +255,32 @@
                     </ul>
                 </section>
 
+                <section>
+                    <h2 class="mt-5">Réseaux sociaux</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <i class="bi bi-instagram" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram"></i>
+                            <a href="https://www.instagram.com/shoe_rum_oh_15/" target="_blank" rel="noopener noreferrer">@shoe_rum_oh_15</a>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <i class="bi bi-facebook" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"></i>
+                            <a href="https://www.facebook.com/SURAMYA.PUSHAN/" target="_blank" rel="noopener noreferrer">Suramya P. Dasgupta</a>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <i class="bi bi-linkedin" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn"></i>
+                            <a href="https://www.linkedin.com/in/suramya-pushan-dasgupta-8924091b5/" target="_blank" rel="noopener noreferrer">Suramya Pushan Dasgupta</a>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <i class="bi bi-twitter-x" data-bs-toggle="tooltip" data-bs-placement="top" title="X (Twitter)"></i>
+                            <a href="https://x.com/PushanSuramya" target="_blank" rel="noopener noreferrer">@PushanSuramya</a>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <i class="bi bi-globe" data-bs-toggle="tooltip" data-bs-placement="top" title="Blog"></i>
+                            <a href="https://suramyapushan.art.blog/about/" target="_blank" rel="noopener noreferrer">Blog personnel</a>
+                        </div>
+                    </div>
+                </section>
+
             </div>
         </div>
     </div>
@@ -284,6 +317,11 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"
 ></script>
+<script>
+    // Initialize Bootstrap tooltips
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+</script>
 
 </body>
 </html>

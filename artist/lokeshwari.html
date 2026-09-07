@@ -81,7 +81,7 @@
             ],
             "relatedTo": {
                 "@type": "Person",
-                "name": "Surangama",
+                "name": "Vidushi Surangama",
                 "description": "Mère et professeure"
             },
             "colleague": {
@@ -129,6 +129,13 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+        .bi-instagram { color: #E4405F; }
+        .bi-facebook { color: #1877F2; }
+        .bi-linkedin { color: #0A66C2; }
+        .bi-twitter-x { color: #000000; }
+        .bi-youtube { color: #FF0000; }
+        .bi-globe { color: #6c757d; }
+        .bi-link-45deg { color: #43E55E; }
     </style>
 </head>
 <body>
@@ -214,9 +221,28 @@
 
                 <section>
                     <h2 class="mt-5">Réseaux sociaux</h2>
-                    <p>
-                        <i class="bi bi-youtube"></i> <a href="https://www.youtube.com/@lokeshwaridasgupta2053" target="_blank" rel="noopener noreferrer">@lokeshwaridasgupta2053</a>
-                    </p>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <i class="bi bi-link-45deg" data-bs-toggle="tooltip" data-bs-placement="top" title="Linktree"></i>
+                            <a href="https://linktr.ee/lokeshwarid" target="_blank" rel="noopener noreferrer">@lokeshwarid</a>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <i class="bi bi-instagram" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram"></i>
+                            <a href="https://www.instagram.com/nrityanaama/" target="_blank" rel="noopener noreferrer">@nrityanaama</a>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <i class="bi bi-facebook" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"></i>
+                            <a href="https://www.facebook.com/lokeshwarinritya/" target="_blank" rel="noopener noreferrer">Lokeshwari Dasgupta NrityaShilpi</a>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <i class="bi bi-linkedin" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn"></i>
+                            <a href="https://www.linkedin.com/in/lokeshwari-dasgupta/" target="_blank" rel="noopener noreferrer">Lokeshwari Dasgupta</a>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <i class="bi bi-youtube" data-bs-toggle="tooltip" data-bs-placement="top" title="YouTube"></i>
+                            <a href="https://www.youtube.com/@lokeshwaridasgupta2053" target="_blank" rel="noopener noreferrer">@lokeshwaridasgupta2053</a>
+                        </div>
+                    </div>
                 </section>
 
             </div>
@@ -255,6 +281,11 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"
 ></script>
+<script>
+    // Initialize Bootstrap tooltips
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+</script>
 
 </body>
 </html>
