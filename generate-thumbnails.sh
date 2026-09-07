@@ -74,11 +74,13 @@ generate_thumb() {
     local basename
     local filename
     local output
+    local extra
 
     input="$1"
     basename=$(basename "$input")
     filename="${basename%.*}"
     output="$THUMB_DIR/${filename}_thumb.webp"
+    extra=""
 
     # Check if source file exists
     if [ ! -f "$input" ]; then
@@ -97,7 +99,7 @@ generate_thumb() {
     # Get original size
     if command -v stat &> /dev/null; then
         orig_size=$(stat -c%s "$input" 2>/dev/null || stat -f%z "$input" 2>/dev/null || echo 0)
-        [ "$orig_size" -gt 0 ] && echo "   Original: $((orig_size / 1024)) KB"
+        [ "$orig_size" -gt 0 ] && extra="$extra Original: $((orig_size / 1024)) KB"
     fi
 
     # WebP conversion with ImageMagick
@@ -111,16 +113,15 @@ generate_thumb() {
     if command -v stat &> /dev/null; then
         thumb_size=$(stat -c%s "$output" 2>/dev/null || stat -f%z "$output" 2>/dev/null || echo 0)
         if [ "$thumb_size" -gt 0 ]; then
-            echo "   Thumbnail: $((thumb_size / 1024)) KB"
+            extra="$extra Thumbnail: $((thumb_size / 1024)) KB"
             if [ "$orig_size" -gt 0 ]; then
                 saved=$((100 - thumb_size * 100 / orig_size))
-                echo "   Saved: ${saved}%"
+                extra="$extra Saved: ${saved}%"
             fi
         fi
     fi
 
-    echo -e "${GREEN}SUCCESS: Created: $output${NC}"
-    echo ""
+    echo -e "${GREEN}SUCCESS: Created: $output${NC} $extra"
 }
 
 # Counters
