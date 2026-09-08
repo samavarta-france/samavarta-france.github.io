@@ -1,5 +1,5 @@
 # robots.txt for Association Samavarta
-# https://samavarta-france.github.io/website/
+# https://samavarta-france.github.io/
 
 User-agent: *
 Allow: /
@@ -7,4 +7,4 @@ Allow: /
 Disallow: /favicons/
 
 # Sitemap location
-Sitemap: https://samavarta-france.github.io/website/sitemap.xml
+Sitemap: https://samavarta-france.github.io/sitemap.xml
