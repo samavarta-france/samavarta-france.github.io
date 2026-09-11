@@ -59,3 +59,10 @@
 .nav-card-link:hover {
     text-decoration: none;
 }
+
+.nav-card-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
