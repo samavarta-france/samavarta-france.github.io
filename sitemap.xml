@@ -5,7 +5,7 @@
   <url>
     <loc>https://samavarta-france.github.io/</loc>
     <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
@@ -26,15 +26,15 @@
 
   <url>
     <loc>https://samavarta-france.github.io/evenements-a-venir.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://samavarta-france.github.io/evenements-passes.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
