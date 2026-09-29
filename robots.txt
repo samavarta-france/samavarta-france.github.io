@@ -2,8 +2,6 @@
 # https://samavarta-france.github.io/
 
 User-agent: *
-Allow: /
-
 Disallow: /favicons/
 
 # Sitemap location
